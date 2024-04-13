@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            regelblue: '#1A61D7',
+
+          }
+        }
+      }
+    }
+  </script>
+  <title>Big-taro</title>
+</head>
+
+<body class="m-auto max-w-[1600px]">
+  <header class="flex justify-between h-28 items-center">
+
+    <div class="text-4xl font-bold uppercase cursor-pointer"> <a href="../Html/index.html">Big tara</a></div>
+
+    <div class="flex flex-1 max-w-[800px] justify-between">
+      <a href="../Html/aboutUS.html" class=" group  transition duration-300 text-2xl">О нас <span
+          class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-blue-600"></span></a>
+      <a href="../Html/delivery.html" class=" group  transition duration-300 text-2xl">Доставка и оплата <span
+          class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-blue-600"></span></a>
+      <a href="../Html/zakup.html" class=" group  transition duration-300 text-2xl">Закупка тары <span
+          class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-blue-600"></span></a>
+      <a href="../Html/gallarey.html" class=" group  transition duration-300 text-2xl">Галерея <span
+          class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-blue-600"></span></a>
+      <a href="../Html/contacts.html" class=" group  transition duration-300 text-2xl">Контакты <span
+          class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-1 bg-blue-600"></span></a>
+    </div>
+
+    <div class="flex max-w-[350px] flex-1 justify-between items-center">
+
+      <label class="inline-flex items-center cursor-pointer">
+        <input type="checkbox" value="" class="sr-only peer">
+        <div
+          class="relative w-11 h-6 peer-focus:outline-none   rounded-full peer-checked:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full  after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white   after:rounded-full after:h-5 after:w-5 after:transition-all  dark:bg-blue-600">
+        </div>
+      </label>
+
+      <button class="flex justify-center items-center bg-blue-700 w-12 h-12 rounded-3xl">
+        <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M17.1543 3.7676C16.5397 3.70101 15.7405 3.70005 14.6 3.70005H5.29349L5.98291 9.18608C6.10982 10.1959 6.19925 10.9008 6.32401 11.4405C6.44574 11.9672 6.58667 12.2658 6.77476 12.4876C6.91839 12.657 7.08579 12.8046 7.27175 12.926C7.51529 13.085 7.82911 13.1876 8.36686 13.2427C8.91797 13.2992 9.62844 13.3 10.6462 13.3H14.6C15.7405 13.3 16.5397 13.2991 17.1543 13.2325C17.7557 13.1673 18.0968 13.0461 18.3519 12.8608C18.5472 12.7189 18.7189 12.5472 18.8608 12.352C19.0461 12.0969 19.1673 11.7558 19.2325 11.1543C19.2991 10.5397 19.3 9.74056 19.3 8.60005V8.40005C19.3 7.25954 19.2991 6.46038 19.2325 5.8458C19.1673 5.24433 19.0461 4.90323 18.8608 4.64814C18.7189 4.45289 18.5472 4.28117 18.3519 4.13931C18.0968 3.95398 17.7557 3.83276 17.1543 3.7676ZM17.3051 2.37574C18.0257 2.45381 18.6413 2.61907 19.1748 3.00669C19.4889 3.2349 19.7652 3.51113 19.9934 3.82524C20.381 4.35876 20.5463 4.97441 20.6243 5.69501C20.7 6.39384 20.7 7.269 20.7 8.35941V8.64069C20.7 9.73109 20.7 10.6063 20.6243 11.3051C20.5463 12.0257 20.381 12.6413 19.9934 13.1749C19.7652 13.489 19.4889 13.7652 19.1748 13.9934C18.6413 14.381 18.0257 14.5463 17.3051 14.6244C16.6062 14.7001 15.7311 14.7001 14.6407 14.7H10.6085C9.63727 14.7001 8.85496 14.7001 8.22413 14.6354C7.57179 14.5686 7.01031 14.4272 6.50649 14.0984C6.20734 13.9031 5.93804 13.6655 5.70699 13.3931C5.31786 12.9342 5.10764 12.3947 4.95997 11.7558C4.81717 11.1379 4.71963 10.3617 4.59855 9.39811L3.70654 2.30005L14.6407 2.30005C15.7311 2.30004 16.6062 2.30003 17.3051 2.37574Z"
+            fill="white" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0.300049 1.00005C0.300049 0.613449 0.613449 0.300049 1.00005 0.300049H2.93386C3.53101 0.300049 4.08437 0.613357 4.3916 1.12541L5.60029 3.1399L4.3998 3.8602L3.19111 1.8457C3.13689 1.75534 3.03924 1.70005 2.93386 1.70005H1.00005C0.613449 1.70005 0.300049 1.38665 0.300049 1.00005Z"
+            fill="white" />
+          <path
+            d="M17.5 16.5C17.5 17.0523 17.0523 17.5 16.5 17.5C15.9477 17.5 15.5 17.0523 15.5 16.5C15.5 15.9477 15.9477 15.5 16.5 15.5C17.0523 15.5 17.5 15.9477 17.5 16.5Z"
+            fill="white" />
+          <path
+            d="M10.5 16.5C10.5 17.0523 10.0523 17.5 9.5 17.5C8.94772 17.5 8.5 17.0523 8.5 16.5C8.5 15.9477 8.94772 15.5 9.5 15.5C10.0523 15.5 10.5 15.9477 10.5 16.5Z"
+            fill="white" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M17 7.70015C17 8.08675 16.6866 8.40015 16.3 8.40015H13.7C13.3134 8.40015 13 8.08675 13 7.70015C13 7.31355 13.3134 7.00015 13.7 7.00015H16.3C16.6866 7.00015 17 7.31355 17 7.70015Z"
+            fill="white" />
+        </svg>
+      </button>
+
+      <button data-modal-target="crud-modal" data-modal-toggle="crud-modal" class="bg-blue-700 w-52 h-12 rounded-xl text-white text-2xl pb-1" type="button">
+        Заказать звонок
+      </button>
+
+      <div id="crud-modal" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overfloq-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-md max-h-full">
+          <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                create New Product
+              </h3>
+              <button type="button"
+                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                data-modal-toggle="crud-modal">
+                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 14 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <form class="p-4 md:p-5">
+              <div class="grid gap-4 mb-4 grid-cols-2">
+                <div class="col-span-2">
+                  <label for="name" class="block bm-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
+                  <input type="text" name="name" id="name"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                </div>
+                <div class="col-span-2 sm:col-span-1">
+                  <label for="price" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Price</label>
+                  <input type="number" name="price" id="price"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                    placeholder="$2999" required="">
+                </div>
+                <div class="col-span-2 sm:col-span-1">
+                  <label for="category"
+                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Category</label>
+                  <select id="category"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                    <option selected="">Select category</option>
+                    <option value="TV">TV/Monitors</option>
+                    <option value="PC">PC</option>
+                    <option value="GA">Gaming/Console</option>
+                    <option value="PH">Phones</option>
+                  </select>
+                </div>
+                <div class="col-span-2">
+                  <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Product
+                    Description</label>
+                  <textarea id="description" rows="4"
+                    class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Write product description here"></textarea>
+                </div>
+              </div>
+              <button type="submit"
+                class="text-white inline-flex items-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                <svg class="me-1 -ms-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd"
+                    d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Add new product
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="flex flex-col m-auto">
+    <div class="flex justify-between ">
+      <!-- левая колонка -->
+      <div class=" right-1 relative flex border border-gray-500 rounded-3xl w-[270px] h-[485px] ">
+        <div class="flex flex-col p-10 justify-between text-2xl ">
+
+          <a href="" class=" transition-all hover:opacity-50 hover:transition-all">Категории</a>
+          <a href="" class=" transition-all hover:opacity-50 hover:transition-all">Еврокубы</a>
+          <a href="" class=" transition-all hover:opacity-50 hover:transition-all">Бочки</a>
+          <a href="" class=" transition-all hover:opacity-50 hover:transition-all">Емкости</a>
+          <a href="" class=" transition-all hover:opacity-50 hover:transition-all">С подогревом</a>
+          <a href="" class=" transition-all hover:opacity-50 hover:transition-all">Комплектующие</a>
+          <a href="" class=" transition-all hover:opacity-50 hover:transition-all">Всё для мини азс</a>
+        </div>
+
+      </div>
+      <!-- слидер -->
+      <div class="">
+        <div id="containerIMG" class="relative flex  min-w-52 w-[1100px] h-[500px] aspect-video m-auto "
+          style="background-size: cover;">
+          <button id="backSlide" class="absolute w-12 h-12 flex justify-start left-10 bottom-1"><img src="../prev.png"
+              alt=""><img class="absolute left-4 top-3" src="../VectorBack.png" alt=""></button>
+          <button id="nextSlide" class="absolute w-12 h-12 flex justify-end right-10 bottom-1"><img src="../next.png"
+              alt=""><img class="absolute left-5 top-3" src="../VectorNext.png" alt=""></button>
+          <div class="absolute flex bottom-2 justify-between w-32 z-40 left-1/2 -translate-x-1/2">
+            <button id="dot1" class=" bg-blue-300 w-3 h-3 rounded-full"></button>
+            <button id="dot2" class=" bg-blue-300 w-3 h-3 rounded-full"></button>
+            <button id="dot3" class="bg-blue-300 w-3 h-3 rounded-full"></button>
+          </div>
+        </div>
+      </div>
+      <!-- Правая колонка -->
+
+      <div class="relative ml-8 w-[273px] h-[482px]  flex items-center flex-col text-[18px] ">
+
+        <img src="../img/rightblock/cube.png" class="w-10  m-auto pb-3 pt-3" alt="">
+        <p class="w-52 text-center m-auto">Постоянное наличие на складе</p>
+
+
+        <img src="../img/rightblock/truck.png" class="w-10 m-auto  pb-3 pt-3" alt="">
+        <p class="w-48 text-center m-auto">Оптовым клиентам скидки</p>
+
+
+        <img src="../img/rightblock/wallet.png" class="w-10 m-auto  pb-3 pt-3" alt="">
+        <p class="w-52 text-center m-auto">Гарантия качества продукции</p>
+
+
+        <img src="../img/rightblock/Star.png" class="w-10  m-auto pb-3 pt-3" alt="">
+        <p class="w-48 text-center m-auto">Оперативная доставка по разумной цене</p>
+
+      </div>
+
+    </div>
+
+    <!-- Популярные категории -->
+    <div class="relative flex mt-48  flex-row items-center">
+      <div class=" flex flex-col w-[290px] h-[117px]">
+        <h1 class="text-4xl pb-[10px] ">Популярные категории</h1>
+        <a href="#" class="text-gray-500 hover:underline">Подробнее</a>
+      </div>
+
+
+      <div class="flex flex-row justify-between">
+        <button class="border border-gray-500 rounded-3xl w-[270px] h-[350px]  flex-col ml-6 pl-2 "><img
+            class="rounded-[30px]  w-[256px] h-[256px] flex " src="../img/2block/Popular1.png" alt="">
+          <h1 class="flex justify-start pl-3 text-[24px] font-bold">Еврокубы <p
+              class="absolute bottom-9 text-gray-600 text-[16px]">Краткое описание</p>
+          </h1>
+        </button>
+        <button class="border border-gray-500 rounded-3xl w-[270px] h-[350px]  flex-col ml-6  pl-2"><img
+            class="rounded-[30px]  w-[256px] h-[256px] flex " src="../img/2block/Popular2.png" alt="">
+          <h1 class="flex justify-start pl-3 text-[24px] font-bold">Бочки <p
+              class="absolute bottom-9 text-gray-600 text-[16px]">Краткое описание</p>
+          </h1>
+        </button>
+        <button class="border border-gray-500 rounded-3xl w-[270px] h-[350px]  flex-col ml-6  pl-2"><img
+            class="rounded-[30px]  w-[209px] h-[256px] flex " src="../img/2block/Popular3.png" alt="">
+          <h1 class="flex justify-start pl-3 text-[24px] font-bold">Комплектующие <p
+              class="absolute bottom-9 text-gray-600 text-[16px]">Краткое описание</p>
+          </h1>
+        </button>
+        <button class="border border-gray-500 rounded-3xl w-[270px] h-[350px]  flex-col ml-6 pl-2"><img
+            class="rounded-[30px]  w-[258px] h-[256px] flex " src="../img/2block/Popular4.png" alt="">
+          <h1 class="flex justify-start pl-3 text-[24px] font-bold">Все для мини азс <p
+              class="absolute bottom-9 text-gray-600 text-[16px]">Краткое описание</p>
+          </h1>
+        </button>
+      </div>
+
+    </div>
+
+
+
+
+    <!-- Акции  -->
+
+    <div class="relative flex mt-48 flex-row  ">
+      <div class=" flex flex-col w-[290px] h-[117px]">
+        <h1 class="text-4xl pb-[10px] ">Акции</h1>
+        <a href="#" class="text-gray-500 hover:underline">Подробнее</a>
+      </div>
+
+      <img src="/big-taro2/img/discount/discount.png" alt="">
+
+    </div>
+
+    <div class="relative text-center flex justify-center mt-12">
+      <div class="text-2xl w-[1140px]">
+        <h1>В нашем интернет магазине представлен широкий ассортимент как новых , так и бывших в употреблении еврокубов,
+          бочек и емкостей различного объема и характеристик. В приоритете изготовление мини азс из еврокубов и продажа
+          топливного оборудования.  Добро пожаловать за покупками</h1>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="../Html/slider.js"></script>
+  <script src="../Html/modal.js"></script>
+</body>
+
+</html>

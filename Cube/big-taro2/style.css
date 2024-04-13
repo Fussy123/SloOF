@@ -1,0 +1,39 @@
+/* CSS для анимации появления блока */
+.slide-in {
+    animation: slideIn 1s ease-out; /* Длительность, функция сглаживания и имя анимации */
+    opacity: 1; /* Начальная непрозрачность */
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0; /* Начальная непрозрачность */
+
+
+    }
+    to {
+        opacity: 1; /* Конечная непрозрачность */
+
+    }
+}
+/* CSS для анимации исчезновения блока */
+.slide-out {
+    animation: slideOut 0.5s ease-in; /* Длительность, функция сглаживания и имя анимации */
+    opacity: 1; /* Начальная непрозрачность */
+}
+
+@keyframes slideOut {
+    from {
+        opacity: 1; /* Начальная непрозрачность */
+        transform: translateX(0); /* Нет сдвига по горизонтали */
+    }
+    to {
+        opacity: 0; /* Конечная непрозрачность */
+        transform: translateX(0px); /* Сдвиг вправо на 1000px */
+    }
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
