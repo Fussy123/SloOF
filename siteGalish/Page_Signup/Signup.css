@@ -1,0 +1,118 @@
+/*====================================== Autrorization ==============================*/
+
+.authorization {
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.authorization_container {
+  background-color: #323c4b;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.authorization_input {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Для узких экранов */
+@media (max-width: 1000px) {
+  .authorization_input {
+    flex-direction: column;
+  }
+  .authorization {
+    max-width: 500px;
+  }
+}
+
+/* Для широких экранов */
+@media (min-width: 1001px) {
+  .authorization_input {
+    flex-direction: row;
+  }
+  .authorization {
+    max-width: 1000px;
+  }
+}
+
+.authorization_output {
+  text-align: center;
+  font-size: 24px;
+  padding: 10px;
+  color: #00ff9c;
+}
+
+
+.login_form {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.register_form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login_text {
+  font-size: 30px;
+  color: #fff;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.input_register {
+  width: 400px;
+  height: 50px;
+  margin: 20px;
+  margin-left: 50px;
+  text-align: center;
+  border-radius: 40px;
+  background: #fff;
+  outline: none;
+  position: relative;
+  border: none;
+
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: black;
+
+  transition: .3s linear;
+}
+
+.button_register {
+  width: 400px;
+  height: 50px;
+  margin: 20px;
+  margin-left: 50px;
+  text-align: center;
+  border-radius: 40px;
+  background: #21c486;
+  outline: none;
+  position: relative;
+  border: none;
+  cursor: pointer;
+
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: white;
+  text-decoration: underline 2px;
+
+  transition: .3s linear;
+}
+
+.login_subtext {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 40px;
+  text-align: center;
+}

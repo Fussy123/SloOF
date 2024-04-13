@@ -1,0 +1,291 @@
+
+/* main */
+
+.intro__container {
+  min-height: 750px;
+  max-width: 1600px;
+  margin: auto;
+  background-color: #fff;
+  margin-bottom: 30px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.main__head {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  animation: beat 0.9s infinite;
+  text-shadow:
+    0 0 5px gray,
+    0 0 45px gray,
+    0 0 90px gray;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+
+  20% {
+    transform: scale(1.15);
+  }
+
+  30% {
+    transform: scale(1.20);
+  }
+}
+
+.discount {
+  margin-top: 250px;
+  align-content: center;
+  font-size: 50px;
+  color: #336666;
+
+}
+
+/* Лушчее от продавцов */
+
+.seller_container {
+  margin-top: 200px;
+  margin: 0 auto;
+  max-width: 1600px;
+  border-start-end-radius: 50px;
+  border-top-left-radius: 50px;
+  padding-bottom: 200px;
+  background-color: white;
+}
+
+.best__sellers {
+  display: flex;
+  justify-content: center;
+  color: #336666;
+  font-size: 24px;
+  padding: 50px;
+  text-align: center;
+}
+
+
+.categ {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+
+/* Для узких экранов */
+@media (max-width: 1000px) {
+
+}
+
+/* Для широких экранов */
+@media (min-width: 1001px) {
+
+}
+
+
+.squere1 {
+  width: 300px;
+  height: 440px;
+  margin: 5px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  border-radius: 25px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+.cost::before {
+  content: attr(data-price);
+}
+
+.cost::after {
+  content: "₽";
+}
+
+.cost {
+  display: block;
+  outline: none;
+  text-decoration: none;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  color: black;
+  text-align: start;
+}
+
+.seller {
+  padding-top: 5px;
+  color: #555555;
+}
+
+
+/* Рекомендуем */
+
+.reco {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transform: scale(1);
+
+}
+
+
+.reco__text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #336666;
+  height: 100px;
+  position: sticky;
+  text-align: center;
+}
+
+.categ__reco {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.squere2 {
+  width: 300px;
+  height: 440px;
+  margin: 5px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  border-radius: 25px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+
+
+}
+
+.categ__reco2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.squere3 {
+
+  width: 650px;
+  height: 240px;
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 45px;
+
+  justify-content: space-between;
+  border-radius: 25px;
+  display: block;
+}
+
+.categ__reco3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.squere4 {
+
+  width: 416px;
+  height: 180px;
+  background-color: white;
+  margin: 25px;
+
+  justify-content: space-between;
+  border-radius: 25px;
+  display: block;
+}
+
+
+
+/* Конец (Почему я на**уй) */
+.why__us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.why__us__header {
+  text-align: center;
+  font-size: 24px;
+  color: #336666;
+
+}
+
+.why__us__text {
+  font-size: 20px;
+  color: #336666;
+  text-align: center;
+
+  margin-top: 45px;
+
+
+  font-weight: 300;
+}
+
+.title_text {
+  text-align: center;
+  width: 300px;
+  height: 40px;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.squere1_img{
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.squere2_img{
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+  
+}
+
+.squere3_img{
+  object-fit: cover;
+  width: 650px;
+  height: 240px;
+}
+
+.squere4_img{
+  object-fit: cover;
+  width: 410px;
+  height: 180px;
+}
+
+
+.squere1:hover{
+  scale: 1.01;
+  transition: 0.2s;
+  color: #00ff9c;
+}
+
+.squere2:hover{
+  scale: 1.01;
+  transition: 0.2s;
+  color: #00ff9c;
+}
+
+.squere3:hover{
+  scale: 1.01;
+  transition: 0.2s;
+  color: #00ff9c;
+}
+
+.squere4:hover{
+  scale: 1.01;
+  transition: 0.2s;
+  color: #00ff9c;
+}

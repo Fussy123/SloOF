@@ -1,0 +1,275 @@
+
+
+main {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.categ_text {
+  width: 1000px;
+  text-align: center;
+  font-size: 32px;
+  color: #323c4b;
+}
+
+.categ {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 1400px;
+}
+
+.squere1 {
+  width: 260px;
+  height: 400px;
+  justify-content: space-between;
+  border-radius: 25px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Для узких экранов */
+@media (max-width: 1000px) {
+  .squere1 {
+    max-width: 800px;
+    margin: 35px auto;
+  }
+}
+
+/* Для широких экранов */
+@media (min-width: 1001px) {
+  .squere1 {
+    margin: 35px;
+  }
+}
+
+.squere1:hover{
+  scale: 1.01;
+  transition: 0.2s;
+  color: #00ff9c;
+}
+
+.cost::before {
+  content: attr(data-price);
+}
+
+.cost::after {
+  content: "₽";
+}
+
+.cost {
+  display: block;
+  outline: none;
+  text-decoration: none;
+  font-size: 20px;
+  padding-bottom: 20px;
+  color: black;
+  text-align: start;
+}
+
+.seller_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.seller_form {
+  margin-top: 10px;
+}
+
+
+.button_seller {
+  display: block;
+  width: 100%;
+  max-height: 100px;
+  padding: 11px;
+  margin-top: 20px;
+  text-align: center;
+  align-items: center;
+  background: #21c486;
+  outline: none;
+  position: relative;
+  border: none;
+  cursor: pointer;
+
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: white;
+  text-decoration: underline 2px;
+
+  transition: .3s linear;
+}
+
+/* Для узких экранов */
+@media (max-width: 1000px) {
+  .button_seller{
+    border-radius: 0px;
+  }
+}
+
+/* Для широких экранов */
+@media (min-width: 1001px) {
+  .button_seller{
+    border-radius: 40px;
+  }
+}
+
+.button_product {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: 50px;
+  margin: 50px;
+  margin-top: 20px;
+  text-align: center;
+  align-items: center;
+  background: #21c486;
+  outline: none;
+  position: relative;
+  border: none;
+  cursor: pointer;
+
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: white;
+  text-decoration: underline 2px;
+
+  transition: .3s linear;
+}
+
+/* Для узких экранов */
+@media (max-width: 800px) {
+  .button_product {
+    border-radius: 0px;
+  }
+  .product {
+    border-radius: 0px;
+  }
+}
+
+/* Для широких экранов */
+@media (min-width: 801px) {
+  .button_product {
+    border-radius: 40px;
+  }
+  .product {
+    border-radius: 40px;
+  }
+}
+
+.product {
+  background-color: #323c4b;
+  transition: .3s linear;
+}
+
+.product_text {
+  color: #fff;
+  margin: auto;
+  padding: 20px;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.product_input {
+  display: flex;
+  flex-direction: column;
+}
+
+.product_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.squere4 {
+
+  width: 416.5px;
+  height: 180px;
+  background-color: white;
+  margin: 25px;
+
+  border-radius: 25px;
+}
+
+/* Для узких экранов */
+@media (max-width: 934px) {
+  .squere4 {
+    max-width: 800px;
+    margin: 25px auto;
+  }
+}
+
+/* Для широких экранов */
+@media (min-width: 935px) {
+  .squere4 {
+    margin: 25px;
+  }
+}
+
+.input_product {
+  margin: 25px auto;
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 20px; /* уменьшил радиус скругления рамки */
+  background: #fff;
+  outline: none;
+  border: 2px solid #ddd; /* добавил контур для поля ввода */
+  box-sizing: border-box; /* чтобы ширина и высота включали в себя рамку и отступы */
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: black;
+  transition: all 0.3s ease; /* плавный переход для изменений */
+}
+
+/* Медиа-запросы для адаптации под различные размеры экранов */
+@media (max-width: 600px) {
+  .input_product {
+    width: 100%;
+    max-width: 400px;
+    /* Другие свойства для адаптации под мобильные устройства */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .input_product {
+    width: 100%;
+    max-width: 600px;
+    /* Другие свойства для адаптации под планшеты и другие устройства */
+  }
+}
+ /* Стили для устройств с большим разрешением */
+@media (min-width: 1025px) {
+  .input_product {
+    width: 100%;
+    max-width: 800px;
+  }
+}
+
+.input_product:first-child{
+  display: flex;
+  color: #767676;
+  text-align: center;
+  height: 200px;
+}
+
+.input_product:nth-child(3){
+  height: 500px;
+
+}
+
+.product_output {
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  padding: 10px;
+}

@@ -1,0 +1,16 @@
+main {
+    max-width: 1600px;
+    margin: auto;
+    min-height: 600px;
+}
+
+.intro {
+    padding-top: 200px;
+}
+
+.error_text {
+    font-size: 30px;
+    text-align: center;
+    color: gray;
+    flex: 1;
+}

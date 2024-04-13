@@ -1,0 +1,54 @@
+/* main */
+
+main {
+  position: relative;
+  height: 600px;
+}
+
+/* Сексуальные ножки */
+
+footer {
+  max-width: 100%;
+  background-color: #323c4b;
+  margin: auto;
+}
+
+.footer__container {
+
+  max-width: 1400px;
+  height: 530px;
+  margin: auto;
+
+
+}
+
+
+.footer__contact {
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+  padding-right: 200px;
+
+}
+
+.contact {
+  color: #fff;
+  font-weight: 100;
+  font-size: 24px;
+  padding-left: 150px;
+}
+
+.contact_dir {
+  font-size: 15px;
+  color: gainsboro;
+  font-weight: 100;
+  display: flex;
+  padding-top: 15px;
+}
+
+.contact_dir:hover {
+  opacity: .2;
+  cursor: pointer;
+}
+
+/* слудер */
