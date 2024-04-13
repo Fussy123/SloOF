@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="tailwind.js"></script>
+    </head>
+    <body id="body" class="bg-ip-gray bg-cover" style="background-image: url(/images/Intro.png);">
+        <header id="header" class="relative flex bg-gradient-to-r from-ip-red to-ip-burgundy transition-all duration-500 z-50 hidden">
+            <div
+                class="flex max-w-screen-2xl mx-auto text-white font-chambers xs:text-xl sm:text-lg md:text-xl lg:text-2xl xl:text-3xl h-12 justify-between items-center flex-1">
+                <button
+                    id="insanepagebtn"
+                    class="uppercase bg-ip-gray rounded-3xl flex-1 max-w-60 h-8 text-ip-red transition-all ml-5 hover:text-white/90">
+                    insanepage
+                </button>
+                <div class="flex xs:hidden sm:flex md:flex lg:flex xl:flex justify-between items-center flex-1">
+                    <button id="servicebtn" class="uppercase transition-all hover:text-ip-gray/80 xs:ml-5 sm:ml-10 md:ml-20 lg:ml-40 xl:ml-40 mr-2">services</button>
+                    <button id="blogbtn" class="uppercase transition-all hover:text-ip-gray/80 mx-2">News</button>
+                    <button id="socialbtn" class="uppercase transition-all hover:text-ip-gray/80 mx-2">my social</button>
+                    <button id="loginbtn" class="uppercase transition-all hover:text-ip-gray/80 ml-2 mr-5">login</button>
+                </div>
+                <button
+                    id="headerMenuBtn"
+                    class="xs:flex sm:hidden md:hidden lg:hidden xl:hidden uppercase transition-all hover:text-ip-gray/80 mx-10">
+                    menu
+                </button>
+                <div id="headerMenu" class="fixed flex flex-col -right-96 top-12 h-36 w-32 rounded-bl-xl transition-all bg-zinc-900 xs:flex sm:hidden md:hidden lg:hidden xl:hidden">
+                    <button id="menuServicebtn" class="uppercase transition-all hover:text-ip-gray/80 mx-2">services</button>
+                    <button id="menuBlogbtn" class="uppercase transition-all hover:text-ip-gray/80 mx-2">News</button>
+                    <button id="menuSocialbtn" class="uppercase transition-all hover:text-ip-gray/80 mx-2">my social</button>
+                    <button id="menuLoginbtn" class="uppercase transition-all hover:text-ip-gray/80 ml-2 mr-5">login</button>
+                </div>
+            </div>
+            <div id="dot" class="flex xs:hidden sm:flex md:flex lg:flex xl:flex"></div>
+        </header>
+        <main id="main" class="max-w-screen-2xl mx-auto">
+            <!--services-->
+            <div class="relative flex-col p-10 hidden" id="services">
+                <div class="flex flex-row items-center serviceblock slide-in-right">
+                    <div class="xs:text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl w-1/2">
+                        <div class="font-bold text-white text-shadow-md font-chambers">
+                            Get ready for a new level of user experience. Welcome to the world of
+                            <span class="font-bold text-ip-red text-shadow-md font-chambers">UX/UI design</span>
+                            , where every detail matters and every user is our top priority.
+                        </div>
+                    </div>
+                    <img src="/images/site.png" alt="" class="w-1/2" />
+                </div>
+                <div class="flex flex-row-reverse items-center serviceblock" id="block2">
+                    <div class="xs:text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl w-1/2">
+                        <div class="font-bold text-white text-shadow-md font-chambers">
+                            We strive for optimized code to ensure efficient interaction between the client and the server, providing fast
+                            response to user requests and a
+                            <span class="font-bold text-ip-red text-shadow-md font-chambers">comfortable user experience</span>
+                            using
+                            <span class="font-bold text-ip-red text-shadow-md font-chambers">JavaScript</span>
+                            and
+                            <span class="font-bold text-ip-red text-shadow-md font-chambers">Php</span>
+                            technologies.
+                        </div>
+                    </div>
+                    <img src="/images/sitePHPJS.png" alt="" class="w-1/2" />
+                </div>
+                <div class="flex flex-row items-center pb-20 serviceblock" id="block3">
+                    <div class="xs:text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl w-1/2">
+                        <div class="font-bold text-white text-shadow-md font-chambers">
+                            We also focus on site responsiveness for ease of use across all devices: computers, tablets, and mobile phones.
+                            Our goal is to create web products that
+                            <span class="font-bold text-ip-red text-shadow-md font-chambers">adapt to various screens</span>
+                            and provide convenience for users.
+                        </div>
+                    </div>
+                    <img src="/images/tablet_phone.png" alt="" class="w-1/2 z-10" />
+                </div>
+                <button
+                    id="serviceButtonContact"
+                    class="xs:text-xl sm:text-xl md:text-xl lg:text-2xl xl:text-3xl xs:w-6/12 sm:w-4/12 md:w-3/6 lg:w-2/6 xl:w-1/4 relative bg-transparent uppercase border-2 border-ip-red rounded-full mt-10 h-14 mx-auto text-transparent bg-gradient-to-l from-ip-red to-pink-800 bg-clip-text font-SanF transi transition-all hover:text-ip-red">
+                    Contact
+                </button>
+            </div>
+            <!--/services-->
+            <!--My Social-->
+            <div class="relative flex-col p-10 hidden" id="social">
+                <div class="relative flex flex-row xs:flex-col-reverse sm:flex-col-reverse md:flex-row lg:flex-row xl:flex-row">
+                    <div
+                        class="flex flex-col bg-gradient-to-r from-ip-red to-ip-burgundy rounded-3xl shadow-red xs:w-full sm:w-full md:w-2/4 w-2/4 items-center xs:p-2 sm:p-3 md:p-5 lg:p-10 xl:p-10">
+                        <h1 class="xs:text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-SanF font-bold text-white pb-4">
+                            Who i am?
+                        </h1>
+                        <p
+                            class="xs:text-sm sm:text-md md:text-lg lg:text-2xl xl:text-3xl font-SanF italic font-bold text-white text-justify">
+                            "Hello! I'm SLATT, a web developer with a diverse background in various fields. While I've dabbled in many
+                            different areas, my heart and taste have ultimately settled on web development. A drive for creativity and
+                            innovation led me to immerse myself in this exciting world of code and design. With each new project, I strive
+                            to create high-quality and intuitive web applications that not only showcase my skills and experience but also
+                            help clients achieve their goals in the online realm. Let's create something amazing together!"
+                        </p>
+                    </div>
+                    <span
+                        id="text-container2"
+                        class="font-chambers xs:text-sm sm:text-md md:text-lg lg:text-3xl xl:text-4xl text-ip-burgundy pl-8 h-72"></span>
+                </div>
+                <div
+                    class="relative flex flex-col bg-gradient-to-r from-ip-red to-ip-burgundy rounded-3xl shadow-red w-full aspect-video items-center top-10 p-10">
+                    <h1 class="xs:text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-SanF font-bold text-white pb-4">
+                        My projects
+                    </h1>
+                </div>
+                <div class="relative flex flex-col w-full justify-between mt-20">
+                    <h1 class="xs:text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-SanF font-bold text-center text-white pb-4">
+                        contacts
+                    </h1>
+                    <div class="flex flex-row justify-between">
+                        <h1 class="xs:text-sm sm:text-md md:text-lg lg:text-3xl xl:text-4xl font-sanf font-bold text-white pb-4">
+                            Telegram @youngs1s
+                        </h1>
+                        <h1 class="xs:text-sm sm:text-md md:text-lg lg:text-3xl xl:text-4xl font-sanf font-bold text-white pb-4">
+                            Insanepage@ipages.com
+                        </h1>
+                        <h1 class="xs:text-sm sm:text-md md:text-lg lg:text-3xl xl:text-4xl font-sanf font-bold text-white pb-4">
+                            +7 999 999 9999
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <!--/My Social-->
+
+            <!--News-->
+            <div class="relative my-28 flex flex-col hidden w-8/12 mx-auto mb-64" id="blog"></div>
+            <!--/News-->
+
+            <!--Intro-->
+            <div
+                class="relative xs:w-full sm:w-10/12 md:w-10/12 lg:w-10/12 xl:w-full flex flex-col top-44 p-5 mx-auto"
+                id="intro"
+                style="min-width: 400px">
+                <span class="sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-chambers text-ip-red text-end pr-10 pt-5">
+                    #created by SLATT
+                </span>
+                <div class="relative flex flex-col items-center top-40 min-h-44">
+                    <img
+                        id="logoFirst"
+                        src="./images/INSANE PAGE.png"
+                        alt=""
+                        class="absolute xs:w-full sm:w-full md:w-8/12 lg:w-8/12 xl:w-5/12 z-30 transition-all duration-1000" />
+                    <img
+                        id="logoSecond"
+                        src="./images/INSANE PAGE second.png"
+                        alt=""
+                        class="absolute xs:w-full sm:w-full md:w-8/12 lg:w-8/12 xl:w-5/12 z-20 transition-all duration-1000" />
+                    <img
+                        id="logoLast"
+                        src="./images/INSANE PAGE las 2.png"
+                        alt=""
+                        class="absolute xs:w-full sm:w-full md:w-8/12 lg:w-8/12 xl:w-5/12 z-10 transition-all duration-1000" />
+                </div>
+                <span
+                    id="text-container"
+                    class="text-3xl md:text-3xl lg:text-3xl xl:text-4xl relative font-chambers text-white text-center top-3/4 mt-28">
+                    M
+                </span>
+                <button
+                    id="gotoweb"
+                    class="xs:text-xl sm:text-xl md:text-xl lg:text-2xl xl:text-3xl xs:w-10/12 sm:w-4/6 md:w-3/6 lg:w-2/6 xl:w-1/4 relative bg-transparent uppercase border-2 border-ip-red rounded-full mt-24 h-14 mx-auto text-transparent bg-gradient-to-l from-ip-red to-pink-800 bg-clip-text font-SanF transi transition-all hover:text-ip-red">
+                    go to my website
+                </button>
+            </div>
+            <!--/intro-->
+        </main>
+        <!--Login Modal-->
+        <div
+            id="signModal"
+            class="fixed flex shadow-lg bg-gradient-to-b from-ip-red to-ip-burgundy w-64 h-80 left-1/2 transition-all duration-500 -top-1/2 -translate-x-1/2 -translate-y-1/2 z-40 rounded-2xl">
+            <span
+                id="closeSignBtn"
+                class="absolute text-3xl text-white font-chambers top-1 right-2 cursor-pointer transition-all hover:text-white/50">
+                x
+            </span>
+            <form id="signInForm" action="" method="post" class="flex flex-col mx-auto text-center font-chambers">
+                <div class="text-3xl text-white mt-2">Sign in</div>
+                <input
+                    type="text"
+                    placeholder="Login"
+                    name="login"
+                    class="mt-10 text-center w-56 my-2 text-xl outline-none focus:outline-none bg-zinc-900 text-white" />
+                <input
+                    type="password"
+                    placeholder="Password"
+                    name="pass_signin"
+                    class="text-center w-56 my-2 text-xl outline-none focus:outline-none bg-zinc-900 text-white" />
+
+                <button
+                    class="text-center w-56 my-2 text-xl transition-all hover:text-black hover:bg-zinc-50 bg-zinc-900 text-white"
+                    type="submit"
+                    id="signInSubmit">
+                    Sign in
+                </button>
+                <button id="goToSignUp" class="absolute text-2xl text-white bottom-2 left-1/2 -translate-x-1/2 hover:text-white/50">
+                    Sign up?
+                </button>
+            </form>
+            <form id="signUpForm" action="" method="post" class="flex-col mx-auto text-center font-chambers hidden">
+                <div class="text-3xl text-white mt-2">Sign up</div>
+                <input
+                    type="text"
+                    placeholder="Login"
+                    name="login"
+                    class="mt-10 text-center w-56 my-2 text-xl outline-none focus:outline-none bg-zinc-900 text-white" />
+                <input
+                    type="password"
+                    placeholder="Password"
+                    name="pass_signup"
+                    class="text-center w-56 my-2 text-xl outline-none focus:outline-none bg-zinc-900 text-white" />
+                <input
+                    type="password"
+                    placeholder="Repeat Pass"
+                    name="repeat_pass_signup"
+                    class="text-center w-56 my-2 text-xl outline-none focus:outline-none bg-zinc-900 text-white" />
+                <button
+                    class="text-center w-56 my-2 text-xl transition-all hover:text-black hover:bg-zinc-50 bg-zinc-900 text-white"
+                    type="submit"
+                    id="signUpSubmit">
+                    Sign up
+                </button>
+                <button id="goToSignIn" class="absolute text-2xl text-white bottom-2 left-1/2 -translate-x-1/2 hover:text-white/50">
+                    Sign in?
+                </button>
+            </form>
+        </div>
+        <!--/Login Modal-->
+
+        <!--Profile-->
+        <div
+            id="profileModal"
+            class="fixed flex shadow-lg bg-gradient-to-b from-ip-red to-ip-burgundy w-64 h-80 left-1/2 transition-all duration-500 -top-1/2 -translate-x-1/2 -translate-y-1/2 z-40 rounded-2xl hidden">
+            <span id="profileName" class="absolute text-3xl font-chambers top-2 -translate-x-1/2 text-center left-1/2 text-white">
+                Profile
+            </span>
+            <span
+                id="closeProfileBtn"
+                class="absolute text-3xl text-white font-chambers top-1 right-2 cursor-pointer transition-all hover:text-white/50">
+                x
+            </span>
+            <form
+                id="verifyAdminForm"
+                action=""
+                method="post"
+                class="absolute flex-col mx-auto text-center font-chambers bottom-16 hidden bg-zinc-900">
+                <input
+                    type="password"
+                    placeholder="admin password"
+                    name="adminPassword"
+                    class="text-center w-56 my-2 text-xl outline-none focus:outline-none bg-zinc-900 text-white" />
+                <button
+                    class="text-center w-56 my-2 text-xl transition-all hover:text-ip-red hover:bg-zinc-50 bg-zinc-900 text-white rounded-full"
+                    type="submit"
+                    id="verifyAdminSubmit">
+                    Werify admin
+                </button>
+            </form>
+            <div
+                id="logoutButton"
+                class="absolute flex justify-center items-center bottom-2 -translate-x-1/2 left-1/2 text-center font-chambers w-56 h-8 my-2 text-xl rounded-full transition-all cursor-pointer bg-zinc-900 text-white hover:text-ip-red">
+                logout
+            </div>
+        </div>
+        <!--/Profile-->
+
+        <!--Error Modal-->
+        <div
+            id="error_modal"
+            class="fixed flex shadow-lg bg-gradient-to-b from-ip-red to-ip-burgundy xs:w-40 sm:w-40 md:w-40 lg:w-72 xl:w-80 h-32 bottom-5 -right-1/2 z-50 transition-all rounded-2xl justify-center">
+            <span
+                id="errorTimer"
+                class="absolute flex xs:text-xs sm:text-xs md:text-xs lg:text-xl xl:text-xl text-white font-chambers cursor-pointer transition-all text-center hover:text-white/50"></span>
+            <div class="flex text-center text-white font-chambers xs:text-md sm:text-md md:text-md lg:text-xl xl:text-2xl w-full justify-center items-center" id="error_output"></div>
+        </div>
+        <!--/Error Modal-->
+        <footer
+            id="footer"
+            class="relative flex mt-60 bg-gradient-to-r from-ip-red to-ip-burgundy w-full justify-center font-chambers text-white uppercase xs:text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-2xl z-50 hidden">
+            insanepage ©2024
+        </footer>
+        <script src="/js/check_cookie.js"></script>
+        <script src="/js/verify_admin.js"></script>
+        <script src="/js/header_menu.js"></script>
+        <script src="/js/gotoweb.js"></script>
+        <script src="/js/services.js"></script>
+        <script src="/js/router.js"></script>
+        <script src="/js/social.js"></script>
+        <script src="/js/SignModal.js"></script>
+        <script src="/js/logoutbtn.js"></script>
+        <script src="/js/check_news.js"></script>
+    </body>
+</html>
