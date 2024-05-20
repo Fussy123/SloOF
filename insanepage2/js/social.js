@@ -3,12 +3,12 @@ function animationLogo2() {
     textContainer.innerHTML = ''; // Очищаем содержимое контейнера
     setTimeout(function () {
         const text = `const SlattInfo = {
-            name: "Artem",
-            age: 18,
+            name: "Suren",
+            age: 19,
             location: "Moscow",
             occupation: "Student",
             skills: ("PHP", "JavaScript", "HTML", "CSS")
-            secondory skills: ("design", "Python")
+            secondory skills: ("Next.js", "React")
             };
             ______
             |      
